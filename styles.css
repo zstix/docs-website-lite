@@ -59,13 +59,18 @@ header > div {
 }
 
 header nav img {
-  padding: 0.4em 0;
+  width: 79px;
+  margin-bottom: -3px;
 }
 
 header nav a {
   display: inline-block;
-  padding: 0.8em 0.6em;
+  padding: 1em 0.6em;
   font-size: 0.8em;
+}
+
+header nav a:hover {
+  background: rgba(255,255,255,0.1);
 }
 
 header input {
@@ -73,8 +78,8 @@ header input {
   color: var(--color-fg-1);
   border: 1px solid var(--color-border);
   margin: 0 1em;
-  padding: 0.3em 0.6em;
-  width: 20em;
+  padding: 0.4em 0.6em;
+  width: 22em;
 }
 
 header input::placeholder {
@@ -90,16 +95,29 @@ header a {
   color: var(--color-link-1);
 }
 
+header select {
+  font-size: 0.8em;
+}
+
+header option {
+  color: var(--color-bg-1);
+}
+
 header button[role="switch"] {
   color: var(--color-link-2);
   margin: 0 1em;
 }
 
-header button[role="switch"][aria-checked="false"] img:first-of-type {
+header button[role="switch"] img {
+  width: 0.9em;
+  height: 0.9em;
+}
+
+header button[role="switch"][aria-checked="false"] img:last-of-type {
   display: none;
 }
 
-header button[role="switch"][aria-checked="true"] img:last-of-type {
+header button[role="switch"][aria-checked="true"] img:first-of-type {
   display: none;
 }
 
@@ -121,10 +139,18 @@ header + div {
   gap: 2em;
 }
 
+aside {
+  padding-top: 1em;
+}
+
 aside a {
   margin: 1.4em 1em;
   color: var(--color-fg-1);
   display: block;
+}
+
+aside img {
+  width: 118px;
 }
 
 aside ul:first-of-type {
@@ -204,6 +230,10 @@ footer > div:last-of-type {
 footer {
   background: var(--color-bg-3);
   flex-wrap: wrap;
+}
+
+footer img {
+  width: 150px;
 }
 
 footer > a {
