@@ -1,6 +1,7 @@
 :root {
   --color-bg-1: #22353c;
   --color-bg-2: #1c2a2f;
+  --color-bg-3: #131f23;;
   --color-fg-1: #a5bbbd;
   --color-border: #37484e;
   --color-link-1: #70ccd3;
@@ -108,11 +109,9 @@ header div > a:last-of-type {
 }
 
 header + div {
-  display: flex;
-}
-
-aside {
-  width: 24%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2em;
 }
 
 aside a {
@@ -123,4 +122,33 @@ aside a {
 
 aside ul:first-of-type {
   border-bottom: 1px solid var(--color-border);
+}
+
+main {
+  line-height: 1.5em;
+}
+
+section {
+  padding: 1em;
+}
+
+section:nth-child(2n) {
+  background: var(--color-bg-3);
+}
+
+section:first-of-type ol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2em 0 1em;
+  padding: 0;
+  list-style: none;
+  gap: 1em;
+}
+
+section:first-of-type li {
+  border: 1px solid var(--color-border);
+  padding: 2.4em 1em;
+  border-radius: 3px;
+  text-align: center;
+  position: relative;
 }
