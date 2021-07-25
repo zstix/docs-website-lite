@@ -11,12 +11,18 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  background: var(--color-bg-2);
+  color: var(--color-fg-1);
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -30,7 +36,6 @@ header {
 
 header a {
   color: var(--color-link-2);
-  text-decoration: none;
 }
 
 header a:focus {
@@ -47,10 +52,10 @@ header nav ul {
 
 header > div {
   justify-content: space-between;
+  padding: 0 1em;
 }
 
 header nav img {
-  background-color: rgba(255,255,255,0.3); /* remove */
   padding: 0.4em 0;
 }
 
@@ -100,4 +105,22 @@ header div > a:last-of-type {
   padding: 0.2em 0.6em;
   border-radius: 2px;
   margin-left: 1em;
+}
+
+header + div {
+  display: flex;
+}
+
+aside {
+  width: 24%;
+}
+
+aside a {
+  margin: 1.4em 1em;
+  color: var(--color-fg-1);
+  display: block;
+}
+
+aside ul:first-of-type {
+  border-bottom: 1px solid var(--color-border);
 }
