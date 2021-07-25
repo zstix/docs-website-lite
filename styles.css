@@ -70,6 +70,7 @@ header nav a {
 
 header input {
   background: var(--color-bg-2);
+  color: var(--color-fg-1);
   border: 1px solid var(--color-border);
   margin: 0 1em;
   padding: 0.3em 0.6em;
@@ -77,7 +78,7 @@ header input {
 }
 
 header input::placeholder {
-  color: #8e9494;
+  color: var(--color-fg-1);
 }
 
 header select,
