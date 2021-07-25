@@ -33,6 +33,8 @@ a {
 
 header {
   background: var(--color-bg-1);
+  position: sticky;
+  top: 0;
 }
 
 header a {
@@ -105,6 +107,10 @@ header div > a:last-of-type {
   background: var(--color-link-1);
   padding: 0.2em 0.6em;
   border-radius: 2px;
+  border: none;
+}
+
+header div > a:last-of-type {
   margin-left: 1em;
 }
 
@@ -150,5 +156,39 @@ section:first-of-type li {
   padding: 2.4em 1em;
   border-radius: 3px;
   text-align: center;
-  position: relative;
+}
+
+section:not(:first-of-type) ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+section:not(:first-of-type) li {
+  background: var(--color-bg-1);
+  padding: 1em;
+  border-radius: 3px;
+}
+
+section:nth-child(5) ul {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+section:nth-child(5) li {
+  text-align: center;
+}
+
+section:nth-child(5) a:last-of-type {
+  display: block;
+  width: 14em;
+  margin: 2em auto 1em;
+  padding: 0.4em;
+  text-align: center;
+  color: var(--color-bg-1);
+  background: var(--color-link-1);
+  border-radius: 2px;
+}
+
+section:nth-child(6) {
+  background: none;
 }
