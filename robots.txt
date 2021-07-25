@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://docs.newrelic.com/sitemap/sitemap-index.xml
+Host: https://docs.newrelic.com
