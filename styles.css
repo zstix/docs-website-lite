@@ -192,3 +192,52 @@ section:nth-child(5) a:last-of-type {
 section:nth-child(6) {
   background: none;
 }
+
+footer,
+footer > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background: var(--color-bg-3);
+  flex-wrap: wrap;
+}
+
+footer > a {
+  margin: 1em;
+}
+
+footer a {
+  color: var(--color-link-2);
+}
+
+footer ul {
+  display: flex;
+}
+
+footer > div:first-of-type a {
+  border: 1px solid var(--color-border);
+  display: inline-block;
+  margin: 1.6em 0.8em 1.6em 0;
+  padding: 0.4em 1em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+footer > div:last-of-type {
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  font-size: 0.9em;
+  padding: 0.4em 1em;
+}
+
+footer > div:last-of-type {
+  font-size: 0.8em;
+}
+
+footer > div:last-of-type a {
+  text-decoration: underline;
+  margin-left: 0.5em;
+}
