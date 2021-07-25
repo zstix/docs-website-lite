@@ -201,8 +201,17 @@ section:nth-child(5) ul {
   grid-template-columns: repeat(6, 1fr);
 }
 
+section:nth-child(5) img {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.4em;
+}
+
 section:nth-child(5) li {
   text-align: center;
+  font-size: 0.9em;
 }
 
 section:nth-child(5) a:last-of-type {
